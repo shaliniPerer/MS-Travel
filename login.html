@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-auth-compat.js"></script>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="top">
+
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+        
+            <div class="header-top">
+                <div class="container">
+        
+                    <a href="tel:+01123456790" class="helpline-box">
+        
+                    <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+        
+                    <div class="wrapper">
+                    
+                        <p class="helpline-title">For Further Inquires :</p>
+        
+                        <p class="helpline-number">+94 713456789</p>
+                    
+                    </div>
+        
+                    </a>
+                
+                    <a href="#" class="logo">
+                      <h style="color: rgb(39, 41, 2); font-size: 40px;">MS TRAVEL</h>
+
+                    </a>
+
+                    <div class="header-btn-group">
+
+                        <!-- <button class="search-btn" aria-label="Search">
+                            <ion-icon name="search"></ion-icon>
+                        </button> -->
+
+                        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="header-bottom">
+                            <div class="container">
+
+                                <ul class="social-list">
+
+                                    <li><a href="#" class="social-link">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a> </li>
+                                        
+                                    <li><a href="#" class="social-link">
+                                            <ion-icon name="logo-tiktok"></ion-icon>
+                                        </a></li> 
+
+                                    <li><a href="#" class="social-link">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                         </a></li >
+                                </ul>
+
+         <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+        </div>
+            <ul class="navbar-list">
+
+                <li><a href="index.html" class="navbar-link" data-nav-link>home</a></li>
+                <li><a href="about.html" class="navbar-link" data-nav-link>about us</a></li> 
+                <li><a href="destination.html" class="navbar-link" data-nav-link>destination</a></li>
+                <li><a href="package.html" class="navbar-link" data-nav-link>packages</a></li>
+                <li><a href="signup.html" class="navbar-link" data-nav-link>login</a></li>
+                
+            </ul>    
+        </div>
+    </div>       
+    
+  </header>          
+
+ <div class="hero"> 
+  <!-- <div class="Login body"> --> 
+
+    
+    <div class="Login">
+        <h1>Login Here</h1>
+        <form id="login-form">
+            
+            <input id="email" type="text" name="Username" placeholder="Enter Username">
+            
+            <input id="pwd" type="Password" name="Password" placeholder="Enter Password">
+            <button type="submit" style="font-size: larger; background-color: rgb(233, 243, 243);">Login</button>
+            <a href="#">Forget Password</a>
+            <p>New Here  ?<a href="signup.html">Register.</a></p> 
+
+        </form>
+    </div>
+  </div>
+<!-- </div> -->
+
+</main>  
+
+ <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+        <a href="#" class="logo">
+             <P MS TRAVEL></P> 
+          </a> 
+
+           <p class="footer-text">
+            Welcome to MS TRAVEL.  
+            Discover the world with us, where every detail is crafted to make your journey unforgettable. Explore today!
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+94 713456789</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.mstravel.com" class="contact-link">info.mstravel.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>34/1,Kohuwela,Nugegoda</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+        
+</footer> 
+<script src="./assets/js/script.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script type="module">
+    // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC9CWHm9d41pKhp2LQg2LpFsNOp8VHFSVc",
+            authDomain: "ms-travels-f6596.firebaseapp.com",
+            projectId: "ms-travels-f6596",
+            storageBucket: "ms-travels-f6596.appspot.com",
+            messagingSenderId: "55881963958",
+            appId: "1:55881963958:web:c08c62b66b8907ac94c917"
+
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('login-form');
+
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('pwd').value;
+
+                if (email && password) {
+                    firebase.auth().signInWithEmailAndPassword(email, password)
+                        .then((userCredential) => {
+                            const user = userCredential.user;
+                            console.log('User logged in:', user);
+
+                            window.location.href = 'index.html';
+                        })
+                        .catch((error) => {
+                            const errorCode = error.code;
+                            const errorMessage = error.message;
+                            console.error('Login failed:', errorCode, errorMessage);
+
+                            if (errorCode === 'auth/wrong-password' || errorCode === 'auth/user-not-found') {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops...',
+                                    text: 'Invalid email or password! Please try again.'
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops...',
+                                    text: 'Login failed. Please try again later.'
+                                });
+                            }
+                        });
+                } else {
+                    console.error('Email and password are required.');
+                }
+            });
+        });
+</script>
+
+</body>
+
+</html>  
+ 
+          
+          
+
+        

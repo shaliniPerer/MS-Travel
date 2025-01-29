@@ -1,0 +1,74 @@
+body
+{
+    margin: 0;
+    padding: 0; 
+     /* background-image: url("C:/Users/Malsha Poojani/OneDrive/Desktop/MS TRAVEL/assets/images/2.jpg"); 
+    background-image: url("C:/Users/Malsha Poojani/OneDrive/Desktop/MS TRAVEL/assets/images/5.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form
+{
+    width: 800px;
+    height: 200px auto 0 auto;
+    padding: 20px ;
+    box-shadow: 0 4px 8px 0 #ebe9e9, 0 4px 8px 0 #ebe9e9;
+    color: #fff;
+    background-color: black;
+    top: 25%;
+    left: 25%;
+    /* bottom: 100%; */
+    position: absolute;
+    /* background: transparent; */
+    /* min-height: 500px; */
+    /* padding-top: 180px ; */
+
+   
+}
+
+h1
+{
+   
+    text-align: center;
+   
+}
+
+.box1
+{
+   width: 100%;
+   padding: 10px;
+   border:none;
+   border-radius: 15px;
+   box-sizing: border-box;
+   margin: 10px 0 15px 0; 
+   background-color: #44442d;
+}
+
+.div1
+{
+    
+   display: inline-block;
+}
+
+.box2
+{
+   padding: 10px;
+   border:none;
+   border-radius: 15px;
+   margin: 10px 0 15px 0; 
+   background-color: #44442d;
+}
+
+.btn
+{
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #44442d;
+    font-size:18px ;
+    color: #fff;
+}

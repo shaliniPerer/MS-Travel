@@ -1,0 +1,54 @@
+<?php
+
+// Database connection
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$database = "your_database";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Function to create a booking
+function createBooking($customerID, $destinationID, $packageID, $bookingDate) {
+    global $conn;
+
+    $sql = "INSERT INTO booking (customerID, destinationID, packageID, bookingDate) VALUES ('$customerID', '$destinationID', '$packageID', '$bookingDate')";
+    if (mysqli_query($conn, $sql)) {
+        return true; // Booking created successfully
+    } else {
+        return false; // Error creating booking
+    }
+}
+
+// Example usage:
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $customerID = $_POST['customerID'];
+    $destinationID = $_POST['destinationID'];
+    $packageID = $_POST['packageID'];
+    $bookingDate = $_POST['bookingDate'];
+
+    // Create the booking
+    if (createBooking($customerID, $destinationID, $packageID, $bookingDate)) {
+        echo "Booking created successfully!";
+    } else {
+        echo "Error creating booking!";
+    }
+}
+
+?>
+
+<!-- HTML form for booking -->
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    Customer ID: <input type="text" name="customerID"><br>
+    Destination ID: <input type="text" name="destinationID"><br>
+    Package ID: <input type="text" name="packageID"><br>
+    Booking Date: <input type="date" name="bookingDate"><br>
+    <input type="submit" value="Book">
+</form>
